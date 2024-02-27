@@ -30,27 +30,30 @@ const questions = [
     message: "Who is getting the credit?",
   },
   {
+    type: "input",
+    name: "contact",
+    message: "What is your Github account?",
+  },
+  {
     type: "list",
     message: "Is your app licensed? Please select one of the list",
     name: "license",
     choices: [
-
       "Apache 2.0",
-      ,
+      
       "BSD-3 Clause",
-      ,
+      
       "CC0",
-      ,
+      
       "GNU GPL v3",
-      ,
+      
       "The Hippocratic License 2.1",
-      ,
+      
       "IBM Public Lincense 1.0",
-      ,
+      
       "MIT",
-      ,
-      "The Unlicense",
-      "no license",
+
+      "No license",
     ],
     validate(answer) {
       if (answer.length < 1) {
