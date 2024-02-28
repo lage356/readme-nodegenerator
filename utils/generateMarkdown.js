@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// this function is used to generate and render the license badge it takes the license from the user input
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 
@@ -20,7 +20,7 @@ function renderLicenseBadge(license) {
 
 }
 
-// TODO: Create a function that returns the license link
+// This function returns the license link and it takes the user input license
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
 
@@ -31,7 +31,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// this functions renders the license section taking the user input license
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
 
@@ -43,7 +43,7 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// this function generates the markdown README template using template literals
 const generateMarkdown = ({
   title,
   description,
@@ -96,5 +96,5 @@ const generateMarkdown = ({
   If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
   
   `;
-
+// here i export the module in order to use it on index 
 module.exports = generateMarkdown;
