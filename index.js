@@ -1,4 +1,4 @@
-// Here are all the packages requiered for the app to work 
+// Here are all the packages requiered for the app to work
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMark = require("./utils/generateMarkdown");
@@ -40,17 +40,17 @@ const questions = [
     name: "license",
     choices: [
       "Apache 2.0",
-      
+
       "BSD-3 Clause",
-      
+
       "CC0",
-      
+
       "GNU GPL v3",
-      
+
       "The Hippocratic License 2.1",
-      
+
       "IBM Public Lincense 1.0",
-      
+
       "MIT",
 
       "No license",
@@ -76,7 +76,7 @@ function writeToFile(fileName, data) {
   );
 }
 
-// This function is to initialize  
+// This function is to initialize
 function init() {
   inquirer.prompt(questions).then((data) => {
     const content = generateMark(data);
