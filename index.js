@@ -53,7 +53,7 @@ const questions = [
 
       "MIT",
 
-      "No license",
+      "no license",
     ],
     validate(answer) {
       if (answer.length < 1) {
