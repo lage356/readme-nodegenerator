@@ -21,6 +21,8 @@
 
   just open the integrated CLI and type "node index.js"
 
+  [!Screenshot](/utils/screenshot.png)
+
 
   ## Credits
   
